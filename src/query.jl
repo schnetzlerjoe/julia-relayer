@@ -1,7 +1,7 @@
 using HTTP
 
-function GetAllConnections(chainid::String)
-    connections = Dict()
+function GetAllConnections(chainid::String)::[Dict]
+    connections = [Dict()]
     return connections
 end
 

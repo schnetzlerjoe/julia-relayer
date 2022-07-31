@@ -5,7 +5,7 @@ function Run()
         connections = GetAllConnections("")
         # run a process for each connection split up into seperate threads
         # as much as the current cpu specs allows
-        @info "running connections across " * string(Threads.nthreads()) * " threads..."
+        @info string("running", " ", length(connections), " ", "connections across", " ", Threads.nthreads(), " ", "threads")
         Threads.@threads for connection in connections
         end
     end
