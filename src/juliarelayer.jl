@@ -1,5 +1,5 @@
 module juliarelayer
+    include("runner.jl")
 
-greet() = print("Hello World!")
-
-end # module
+    Run()
+end
